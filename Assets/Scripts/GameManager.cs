@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     private Text attackerResources;
     private Text winScreen;
 
+    enum GameState { Attacker, Defender };
+
+    private GameState gameState;
+
     // Start is called before the first frame update
     void Start()
     {
