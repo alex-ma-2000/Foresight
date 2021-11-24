@@ -354,6 +354,8 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Attacker.cs"
+"Assets/Scripts/Button Scripts/ExitGame.cs"
+"Assets/Scripts/Button Scripts/StartGame.cs"
 "Assets/Scripts/Defender.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/KillBox.cs"

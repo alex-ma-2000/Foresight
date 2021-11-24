@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4969706134585205759}
+  - component: {fileID: 8196602473308554382}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -26,7 +27,28 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -142.53745, y: -41.71131, z: -89.80806}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8196602473308554382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844743052207969450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cd8cf0b3e9e5942a5ad7a43fc5df92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackerScore: 0
+  attackerWinScore: 5
+  defenderScore: 0
+  defenderWinScore: 5
+  attackerSpawn: {fileID: 0}
+  attacker: {fileID: 0}
+  wall: {fileID: 0}
+  gameOver: 0

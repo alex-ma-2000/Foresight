@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                // Change to return to main menu
                 Application.Quit();
             }
         }
