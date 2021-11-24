@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -21,22 +23,29 @@ public class GameManager : MonoBehaviour
     private GameObject[] walls;
 
     public bool gameOver = false;
+    [SerializeField]
+    private bool gameStarted = false;
 
     private Text scoreboard;
     private Text attackerResources;
     private Text winScreen;
+    private GameObject playerSelect;
 
-    enum GameState { Attacker, Defender };
-
-    private GameState gameState;
+    public enum GameState { Attacker, Defender, NotStarted };
+    public GameState gameState = GameState.NotStarted;
 
     // Start is called before the first frame update
     void Start()
     {
         scoreboard = GameObject.Find("Scoreboard").GetComponent<Text>();
+        scoreboard.gameObject.SetActive(false);
         attackerResources = GameObject.Find("Attacker").GetComponent<Text>();
+        attackerResources.gameObject.SetActive(false);
         winScreen = GameObject.Find("WinScreen").GetComponent<Text>();
         winScreen.gameObject.SetActive(false);
+
+        // Add Listeners to buttons
+        AddListernersToButtons();
 
         Transform[] objs = wall.GetComponentsInChildren<Transform>();
         walls = new GameObject[objs.Length];
@@ -54,22 +63,24 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameOver)
+        // In Game Logic
+        if (!gameOver && gameStarted)
         {
             // Logic for ending the game
             if (attackerScore == attackerWinScore)
             {
                 gameOver = true;
                 winScreen.gameObject.SetActive(true);
-                winScreen.text = "Attacker Wins! Click to Play Again!";
+                winScreen.text = "Attacker Wins! \nClick to Play Again!\nESC to Return to Title";
             }
             else if (defenderScore == defenderWinScore)
             {
                 gameOver = true;
                 winScreen.gameObject.SetActive(true);
-                winScreen.text = "You Lose. Click to Play Again!"; // Change to defender wins in future interations
+                winScreen.text = "You Lose. \nClick to Play Again! \nESC to Return to Title"; // Change to defender wins in future interations
             }
         }
+        // Post Game Logic
         else if (gameOver)
         {
             if (Input.GetMouseButtonDown(0))
@@ -85,7 +96,7 @@ public class GameManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 // Change to return to main menu
-                Application.Quit();
+                SceneManager.LoadScene("Title Screen");
             }
         }
     }
@@ -136,7 +147,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < numWalls; i++)
         {
-            int rand = Random.Range(1, walls.Length);
+            int rand = UnityEngine.Random.Range(1, walls.Length);
             if (!randNums.Contains(rand))
             {
                 randNums.Add(rand);
@@ -168,5 +179,34 @@ public class GameManager : MonoBehaviour
     public int AttackerBounces()
     {
         return 3 + defenderScore;
+    }
+
+    // Adds Listeners to buttons for this scene
+    private void AddListernersToButtons()
+    {
+        playerSelect = GameObject.Find("Player Select");
+        Button attackerBtn = playerSelect.GetComponentsInChildren<Button>()[0];
+        Button defenderBtn = playerSelect.GetComponentsInChildren<Button>()[1];
+
+        attackerBtn.onClick.AddListener(AttackerStart);
+        defenderBtn.onClick.AddListener(DefenderStart);
+    }
+
+    // Starts the game with the player as an attacker
+    private void AttackerStart()
+    {
+        gameState = GameState.Attacker;
+        playerSelect.SetActive(false);
+        scoreboard.gameObject.SetActive(true);
+        attackerResources.gameObject.SetActive(true);
+    }
+
+    // Starts the game with the player as a defender
+    private void DefenderStart()
+    {
+        gameState = GameState.Defender;
+        playerSelect.SetActive(false);
+        scoreboard.gameObject.SetActive(true);
+        attackerResources.gameObject.SetActive(true);
     }
 }

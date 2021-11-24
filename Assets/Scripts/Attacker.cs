@@ -35,7 +35,8 @@ public class Attacker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!fired && !gameManager.gameOver)
+        // Attacker Start Logic
+        if (!fired && !gameManager.gameOver && gameManager.gameState == GameManager.GameState.Attacker)
         {
             // Draws a line
             _lineRenderer.SetPosition(0, this.transform.position);
@@ -64,6 +65,12 @@ public class Attacker : MonoBehaviour
 
                 fired = true;
             }
+        } 
+        // Defender Start Logic
+        else if (gameManager.gameState == GameManager.GameState.Defender)
+        {
+            // TODO
+            // Attacker AI
         }
     }
 
