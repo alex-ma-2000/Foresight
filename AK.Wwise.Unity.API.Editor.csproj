@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D7EE0AD1-688E-1438-0FA3-13C7EF78D785}</ProjectGuid>
+    <ProjectGuid>{A4E4A7BF-73B2-FE48-2DFD-48AAAF9B2893}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>AK.Wwise.Unity.API.Editor</AssemblyName>
@@ -759,19 +759,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AK.Wwise.Unity.API.csproj">
-      <Project>{6A15201C-3A47-23B5-73E7-ACD35C5BF43E}</Project>
+      <Project>{A66B1E20-703A-5441-A2EF-EEFDC5ECDCF5}</Project>
       <Name>AK.Wwise.Unity.API</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.WwiseTypes.csproj">
-      <Project>{7699AD36-9990-7F14-23C1-05064334EAA3}</Project>
+      <Project>{338631CE-A0BD-50CB-5E20-14E5880B63A6}</Project>
       <Name>AK.Wwise.Unity.API.WwiseTypes</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.MonoBehaviour.csproj">
-      <Project>{34886C68-E3D7-0738-A705-A5D9D0B13626}</Project>
+      <Project>{2CB8932F-4308-B604-2638-0EDFC6FA3DF4}</Project>
       <Name>AK.Wwise.Unity.MonoBehaviour</Name>
     </ProjectReference>
     <ProjectReference Include="Ak.Wwise.Api.WAAPI.csproj">
-      <Project>{20A30F46-8ADF-D450-2530-D2A550A40E86}</Project>
+      <Project>{6BFBD0DA-6985-50AA-3084-290D31596B87}</Project>
       <Name>Ak.Wwise.Api.WAAPI</Name>
     </ProjectReference>
   </ItemGroup>

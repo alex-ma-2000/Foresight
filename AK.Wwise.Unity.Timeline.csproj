@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F1DC0427-4DD3-D8A6-1484-1B24C9C9B5D9}</ProjectGuid>
+    <ProjectGuid>{1D66755D-F312-F0DA-7D84-4DB24007A62F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>AK.Wwise.Unity.Timeline</AssemblyName>
@@ -736,11 +736,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AK.Wwise.Unity.API.csproj">
-      <Project>{6A15201C-3A47-23B5-73E7-ACD35C5BF43E}</Project>
+      <Project>{A66B1E20-703A-5441-A2EF-EEFDC5ECDCF5}</Project>
       <Name>AK.Wwise.Unity.API</Name>
     </ProjectReference>
     <ProjectReference Include="AK.Wwise.Unity.API.WwiseTypes.csproj">
-      <Project>{7699AD36-9990-7F14-23C1-05064334EAA3}</Project>
+      <Project>{338631CE-A0BD-50CB-5E20-14E5880B63A6}</Project>
       <Name>AK.Wwise.Unity.API.WwiseTypes</Name>
     </ProjectReference>
   </ItemGroup>
