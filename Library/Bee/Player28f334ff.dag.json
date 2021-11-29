@@ -148,7 +148,27 @@
         140,
         141,
         142,
-        143
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -209,6 +229,50 @@
       "DebugActionIndex": 5
     },
     {
+      "Annotation": "CopyFiles Builds/Foresight_Data/level1",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win/Data/level1"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/level1"
+      ],
+      "DebugActionIndex": 6
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/level1.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win/Data/level1.resS"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/level1.resS"
+      ],
+      "DebugActionIndex": 7
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/resources.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win/Data/resources.assets"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/resources.assets"
+      ],
+      "DebugActionIndex": 8
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/resources.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win/Data/resources.assets.resS"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/resources.assets.resS"
+      ],
+      "DebugActionIndex": 9
+    },
+    {
       "Annotation": "CopyFiles Builds/Foresight_Data/RuntimeInitializeOnLoads.json",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -217,7 +281,7 @@
       "Outputs": [
         "Builds/Foresight_Data/RuntimeInitializeOnLoads.json"
       ],
-      "DebugActionIndex": 6
+      "DebugActionIndex": 10
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/ScriptingAssemblies.json",
@@ -228,7 +292,7 @@
       "Outputs": [
         "Builds/Foresight_Data/ScriptingAssemblies.json"
       ],
-      "DebugActionIndex": 7
+      "DebugActionIndex": 11
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/sharedassets0.assets",
@@ -239,7 +303,7 @@
       "Outputs": [
         "Builds/Foresight_Data/sharedassets0.assets"
       ],
-      "DebugActionIndex": 8
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/sharedassets0.assets.resS",
@@ -250,7 +314,29 @@
       "Outputs": [
         "Builds/Foresight_Data/sharedassets0.assets.resS"
       ],
-      "DebugActionIndex": 9
+      "DebugActionIndex": 13
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/sharedassets1.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win/Data/sharedassets1.assets"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/sharedassets1.assets"
+      ],
+      "DebugActionIndex": 14
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/sharedassets1.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win/Data/sharedassets1.assets.resS"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/sharedassets1.assets.resS"
+      ],
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Resources/unity_builtin_extra",
@@ -261,7 +347,106 @@
       "Outputs": [
         "Builds/Foresight_Data/Resources/unity_builtin_extra"
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 16
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/desc.txt",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/desc.txt"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/desc.txt"
+      ],
+      "DebugActionIndex": 17
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Wwise_IDs.h"
+      ],
+      "DebugActionIndex": 18
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Foresight.bnk",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Foresight.bnk"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Foresight.bnk"
+      ],
+      "DebugActionIndex": 19
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Foresight.txt",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Foresight.txt"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Foresight.txt"
+      ],
+      "DebugActionIndex": 20
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.bnk",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.bnk"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.bnk"
+      ],
+      "DebugActionIndex": 21
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.txt",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.txt"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/Init.txt"
+      ],
+      "DebugActionIndex": 22
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PluginInfo.xml",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PluginInfo.xml"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/PluginInfo.xml"
+      ],
+      "DebugActionIndex": 23
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.xml",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.xml"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/StreamingAssets/Audio/GeneratedSoundBanks/Windows/SoundbanksInfo.xml"
+      ],
+      "DebugActionIndex": 24
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/Plugins/x86/AkSoundEngine.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/Plugins/x86/AkSoundEngine.dll"
+      ],
+      "DebugActionIndex": 25
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Plugins/x86/lib_burst_generated.dll",
@@ -272,7 +457,62 @@
       "Outputs": [
         "Builds/Foresight_Data/Plugins/x86/lib_burst_generated.dll"
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 26
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Ak.Wwise.Api.WAAPI.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/Ak.Wwise.Api.WAAPI.dll"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/Managed/Ak.Wwise.Api.WAAPI.dll"
+      ],
+      "DebugActionIndex": 27
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/Managed/AK.Wwise.Unity.API.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/AK.Wwise.Unity.API.dll"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/Managed/AK.Wwise.Unity.API.dll"
+      ],
+      "DebugActionIndex": 28
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/Managed/AK.Wwise.Unity.API.WwiseTypes.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/AK.Wwise.Unity.API.WwiseTypes.dll"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/Managed/AK.Wwise.Unity.API.WwiseTypes.dll"
+      ],
+      "DebugActionIndex": 29
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/Managed/AK.Wwise.Unity.MonoBehaviour.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/AK.Wwise.Unity.MonoBehaviour.dll"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/Managed/AK.Wwise.Unity.MonoBehaviour.dll"
+      ],
+      "DebugActionIndex": 30
+    },
+    {
+      "Annotation": "CopyFiles Builds/Foresight_Data/Managed/AK.Wwise.Unity.Timeline.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/Data/Managed/AK.Wwise.Unity.Timeline.dll"
+      ],
+      "Outputs": [
+        "Builds/Foresight_Data/Managed/AK.Wwise.Unity.Timeline.dll"
+      ],
+      "DebugActionIndex": 31
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Assembly-CSharp.dll",
@@ -283,7 +523,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Assembly-CSharp.dll"
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 32
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Mono.Security.dll",
@@ -294,7 +534,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Mono.Security.dll"
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 33
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/mscorlib.dll",
@@ -305,7 +545,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/mscorlib.dll"
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/netstandard.dll",
@@ -316,7 +556,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/netstandard.dll"
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Newtonsoft.Json.dll",
@@ -327,7 +567,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Newtonsoft.Json.dll"
       ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.ComponentModel.Composition.dll",
@@ -338,7 +578,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.ComponentModel.Composition.dll"
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Configuration.dll",
@@ -349,7 +589,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Configuration.dll"
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Core.dll",
@@ -360,7 +600,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Core.dll"
       ],
-      "DebugActionIndex": 19
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -371,7 +611,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Data.DataSetExtensions.dll"
       ],
-      "DebugActionIndex": 20
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Data.dll",
@@ -382,7 +622,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Data.dll"
       ],
-      "DebugActionIndex": 21
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.dll",
@@ -393,7 +633,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.dll"
       ],
-      "DebugActionIndex": 22
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Drawing.dll",
@@ -404,7 +644,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Drawing.dll"
       ],
-      "DebugActionIndex": 23
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.EnterpriseServices.dll",
@@ -415,7 +655,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.EnterpriseServices.dll"
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.IO.Compression.dll",
@@ -426,7 +666,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.IO.Compression.dll"
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -437,7 +677,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.IO.Compression.FileSystem.dll"
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Net.Http.dll",
@@ -448,7 +688,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Net.Http.dll"
       ],
-      "DebugActionIndex": 27
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Numerics.dll",
@@ -459,7 +699,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Numerics.dll"
       ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Runtime.dll",
@@ -470,7 +710,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Runtime.dll"
       ],
-      "DebugActionIndex": 29
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Runtime.Serialization.dll",
@@ -481,7 +721,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Runtime.Serialization.dll"
       ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Security.dll",
@@ -492,7 +732,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Security.dll"
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.ServiceModel.Internals.dll",
@@ -503,7 +743,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.ServiceModel.Internals.dll"
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Transactions.dll",
@@ -514,7 +754,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Transactions.dll"
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Xml.dll",
@@ -525,7 +765,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Xml.dll"
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/System.Xml.Linq.dll",
@@ -536,7 +776,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/System.Xml.Linq.dll"
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.2D.Common.Runtime.dll",
@@ -547,7 +787,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.2D.Common.Runtime.dll"
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.2D.SpriteShape.Runtime.dll",
@@ -558,7 +798,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Burst.Cecil.dll",
@@ -569,7 +809,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Burst.Cecil.dll"
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Burst.Cecil.Mdb.dll",
@@ -580,7 +820,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Burst.Cecil.Mdb.dll"
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Burst.Cecil.Pdb.dll",
@@ -591,7 +831,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Burst.Cecil.Pdb.dll"
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Burst.Cecil.Rocks.dll",
@@ -602,7 +842,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Burst.Cecil.Rocks.dll"
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Burst.dll",
@@ -613,7 +853,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Burst.dll"
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -624,7 +864,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Burst.Unsafe.dll"
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.InternalAPIEngineBridge.001.dll",
@@ -635,7 +875,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Mathematics.dll",
@@ -646,7 +886,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Mathematics.dll"
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.TextMeshPro.dll",
@@ -657,7 +897,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.TextMeshPro.dll"
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/Unity.Timeline.dll",
@@ -668,7 +908,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/Unity.Timeline.dll"
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -679,7 +919,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.AccessibilityModule.dll"
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.AIModule.dll",
@@ -690,7 +930,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.AIModule.dll"
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -701,7 +941,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.AndroidJNIModule.dll"
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -712,7 +952,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.AnimationModule.dll"
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ARModule.dll",
@@ -723,7 +963,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ARModule.dll"
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -734,7 +974,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.AssetBundleModule.dll"
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.AudioModule.dll",
@@ -745,7 +985,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.AudioModule.dll"
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ClothModule.dll",
@@ -756,7 +996,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ClothModule.dll"
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -767,7 +1007,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ClusterInputModule.dll"
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -778,7 +1018,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ClusterRendererModule.dll"
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.CoreModule.dll",
@@ -789,7 +1029,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.CoreModule.dll"
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -800,7 +1040,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.CrashReportingModule.dll"
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -811,7 +1051,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.DirectorModule.dll"
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.dll",
@@ -822,7 +1062,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.dll"
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -833,7 +1073,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.DSPGraphModule.dll"
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -844,7 +1084,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.GameCenterModule.dll"
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.GIModule.dll",
@@ -855,7 +1095,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.GIModule.dll"
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.GridModule.dll",
@@ -866,7 +1106,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.GridModule.dll"
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -877,7 +1117,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.HotReloadModule.dll"
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -888,7 +1128,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ImageConversionModule.dll"
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -899,7 +1139,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.IMGUIModule.dll"
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -910,7 +1150,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.InputLegacyModule.dll"
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.InputModule.dll",
@@ -921,7 +1161,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.InputModule.dll"
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -932,7 +1172,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.JSONSerializeModule.dll"
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -943,7 +1183,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.LocalizationModule.dll"
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -954,7 +1194,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.NVIDIAModule.dll"
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -965,7 +1205,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ParticleSystemModule.dll"
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -976,7 +1216,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.PerformanceReportingModule.dll"
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -987,7 +1227,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.Physics2DModule.dll"
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -998,7 +1238,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.PhysicsModule.dll"
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ProfilerModule.dll",
@@ -1009,7 +1249,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ProfilerModule.dll"
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -1020,7 +1260,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll"
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -1031,7 +1271,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.ScreenCaptureModule.dll"
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -1042,7 +1282,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.SharedInternalsModule.dll"
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -1053,7 +1293,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.SpriteMaskModule.dll"
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -1064,7 +1304,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.SpriteShapeModule.dll"
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -1075,7 +1315,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.StreamingModule.dll"
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -1086,7 +1326,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.SubstanceModule.dll"
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -1097,7 +1337,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.SubsystemsModule.dll"
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -1108,7 +1348,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TerrainModule.dll"
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -1119,7 +1359,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TerrainPhysicsModule.dll"
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -1130,7 +1370,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll"
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -1141,7 +1381,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll"
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -1152,7 +1392,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TextRenderingModule.dll"
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -1163,7 +1403,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TilemapModule.dll"
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.TLSModule.dll",
@@ -1174,7 +1414,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.TLSModule.dll"
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll",
@@ -1185,7 +1425,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UaaLAnalyticsModule.dll"
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UI.dll",
@@ -1196,7 +1436,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UI.dll"
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -1207,7 +1447,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UIElementsModule.dll"
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UIElementsNativeModule.dll",
@@ -1218,7 +1458,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UIElementsNativeModule.dll"
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UIModule.dll",
@@ -1229,7 +1469,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UIModule.dll"
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -1240,7 +1480,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UmbraModule.dll"
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UNETModule.dll",
@@ -1251,7 +1491,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UNETModule.dll"
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -1262,7 +1502,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityAnalyticsModule.dll"
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -1273,7 +1513,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityConnectModule.dll"
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -1284,7 +1524,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityCurlModule.dll"
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -1295,7 +1535,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityTestProtocolModule.dll"
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -1306,7 +1546,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll"
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -1317,7 +1557,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll"
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -1328,7 +1568,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestModule.dll"
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -1339,7 +1579,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll"
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -1350,7 +1590,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll"
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -1361,7 +1601,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.VehiclesModule.dll"
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.VFXModule.dll",
@@ -1372,7 +1612,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.VFXModule.dll"
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.VideoModule.dll",
@@ -1383,7 +1623,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.VideoModule.dll"
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -1394,7 +1634,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.VirtualTexturingModule.dll"
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.VRModule.dll",
@@ -1405,7 +1645,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.VRModule.dll"
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.WindModule.dll",
@@ -1416,7 +1656,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.WindModule.dll"
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Managed/UnityEngine.XRModule.dll",
@@ -1427,7 +1667,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Managed/UnityEngine.XRModule.dll"
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
@@ -1438,7 +1678,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 117
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/app.info",
@@ -1450,9 +1690,9 @@
         "Builds/Foresight_Data/app.info"
       ],
       "ToBuildDependencies": [
-        117
+        137
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles Builds/Foresight_Data/Resources/unity default resources",
@@ -1463,7 +1703,7 @@
       "Outputs": [
         "Builds/Foresight_Data/Resources/unity default resources"
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles Builds/Foresight.exe",
@@ -1474,7 +1714,7 @@
       "Outputs": [
         "Builds/Foresight.exe"
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles Builds/UnityCrashHandler32.exe",
@@ -1485,7 +1725,7 @@
       "Outputs": [
         "Builds/UnityCrashHandler32.exe"
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles Builds/UnityPlayer.dll",
@@ -1496,7 +1736,7 @@
       "Outputs": [
         "Builds/UnityPlayer.dll"
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -1507,7 +1747,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll"
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -1518,7 +1758,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll"
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -1529,7 +1769,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/browscap.ini"
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/config",
@@ -1540,7 +1780,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/config"
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -1551,7 +1791,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -1562,7 +1802,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/machine.config"
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -1573,7 +1813,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/settings.map"
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -1584,7 +1824,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/web.config"
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -1595,7 +1835,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -1606,7 +1846,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -1617,7 +1857,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/machine.config"
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -1628,7 +1868,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/settings.map"
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -1639,7 +1879,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/web.config"
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -1650,7 +1890,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -1661,7 +1901,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx"
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -1672,7 +1912,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/machine.config"
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -1683,7 +1923,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/settings.map"
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -1694,7 +1934,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/web.config"
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -1705,7 +1945,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser"
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -1716,7 +1956,7 @@
       "Outputs": [
         "Builds/MonoBleedingEdge/etc/mono/mconfig/config.xml"
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "Player",
@@ -1840,6 +2080,7 @@
         114,
         115,
         116,
+        117,
         118,
         119,
         120,
@@ -1859,15 +2100,34 @@
         134,
         135,
         136,
-        137,
         138,
         139,
         140,
         141,
-        142
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 143
+      "DebugActionIndex": 163
     }
   ],
   "FileSignatures": [
@@ -1994,6 +2254,9 @@
   ],
   "StatSignatures": [
     {
+      "File": "Assets/Wwise/API/Runtime/Plugins/Windows/x86/Profile/AkSoundEngine.dll"
+    },
+    {
       "File": "Builds/Foresight.sln"
     },
     {
@@ -2083,7 +2346,7 @@
   "EmitDataForBeeWhy": 1,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 143
+          "Player": 163
         }
 ,  "DefaultNodes": [
     0

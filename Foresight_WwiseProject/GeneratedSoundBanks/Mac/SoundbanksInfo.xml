@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="48451065">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2526820802" Language="SFX" Hash="3309248481">
+			<ObjectPath>\SoundBanks\Default Work Unit\Foresight</ObjectPath>
+			<ShortName>Foresight</ShortName>
+			<Path>Foresight.bnk</Path>
+			<IncludedEvents>
+				<Event Id="70746309" Name="Ball_Bounce" ObjectPath="\Events\Default Work Unit\Main\Ball_Bounce" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="847363781" Language="SFX">
+							<ShortName>Ball Bounce.wav</ShortName>
+							<Path>SFX\Ball Bounce_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1445119814" Name="Ball_Shoot" ObjectPath="\Events\Default Work Unit\Main\Ball_Shoot" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="85823196" Language="SFX">
+							<ShortName>Ball Shoot.wav</ShortName>
+							<Path>SFX\Ball Shoot_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3976231086" Name="Defender_Hit" ObjectPath="\Events\Default Work Unit\Main\Defender_Hit" DurationType="Infinite"/>
+				<Event Id="1432716332" Name="Game_Over" ObjectPath="\Events\Default Work Unit\Main\Game_Over" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="775116665" Language="SFX">
+							<ShortName>Endgame.wav</ShortName>
+							<Path>SFX\Endgame_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3215068044" Name="Game_in_Play" ObjectPath="\States\Music States\Music_States\Game_in_Play"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3810358618" Name="Menu_Buttons" ObjectPath="\Events\Default Work Unit\Main\Menu_Buttons" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="507962002" Language="SFX">
+							<ShortName>Main Menu Buttons.wav</ShortName>
+							<Path>SFX\Main Menu Buttons_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3864556541" Name="Place_Wall" ObjectPath="\Events\Default Work Unit\Main\Place_Wall" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="951834194" Language="SFX">
+							<ShortName>Place Wall.wav</ShortName>
+							<Path>SFX\Place Wall_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1256202815" Name="Play" ObjectPath="\Events\Default Work Unit\Main\Play" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="85443492" Language="SFX">
+							<ShortName>Main Music V2.wav</ShortName>
+							<Path>SFX\Main Music V2_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3924793754" Name="Bounces_Occurred" ObjectPath="\Game Parameters\Default Work Unit\Bounces_Occurred"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3215068044" Name="Game_in_Play" ObjectPath="\States\Music States\Music_States\Game_in_Play" GUID="{FE43B079-7B1C-4AE1-91F3-EC7603C79763}">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

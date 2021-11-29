@@ -5,6 +5,7 @@ using UnityEngine;
 public class Defender : MonoBehaviour
 {
     private GameManager gameManager;
+    private Attacker attacker;
 
     public AK.Wwise.Event defenderHit;
 
@@ -12,6 +13,7 @@ public class Defender : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        attacker = GameObject.Find("ball").GetComponent<Attacker>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class Defender : MonoBehaviour
     {
         // Tick Game Score
         gameManager.AttackerWin();
+        attacker.ResetBouncesOccured();
         defenderHit.Post(gameObject);
     }
 }

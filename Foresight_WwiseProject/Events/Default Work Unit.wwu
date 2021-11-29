@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Main" ID="{946DA5B0-B85E-4164-9E9B-992CB18320C2}" ShortID="652589621">
+					<ChildrenList>
+						<Event Name="Play" ID="{920C234C-88EE-48A0-8190-BB7C8CEA022D}">
+							<ChildrenList>
+								<Action Name="" ID="{30AEAC1C-A012-41A7-81BF-BC758C101836}" ShortID="546021471">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Music Container" ID="{41B30787-A81D-41E5-83EE-6DC90D769A37}" WorkUnitID="{52ADCD53-AD03-466E-AFFC-915417B4441E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Game_Over" ID="{BE36B29D-A20E-4C15-9FBC-5806E1BBC98D}">
+							<ChildrenList>
+								<Action Name="" ID="{EC9B0982-F4C6-4E1F-BE49-14EE0600C3DC}" ShortID="928783039">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Victory Jingle Container" ID="{1D742EF9-6D67-4A81-BA40-85670B81EE3F}" WorkUnitID="{52ADCD53-AD03-466E-AFFC-915417B4441E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BCB19F0E-140E-40F6-895B-8C8E727DE5B4}" ShortID="869973703">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="16"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game_in_Play" ID="{FE43B079-7B1C-4AE1-91F3-EC7603C79763}" WorkUnitID="{EFE834FE-8231-438F-9B1C-1753A2412EF5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ball_Bounce" ID="{6D669655-9CFD-4DDA-8A46-F95F386756B3}">
+							<ChildrenList>
+								<Action Name="" ID="{26E079B6-421A-4676-AA29-872D482A8C96}" ShortID="647379404">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ball Bounce Container" ID="{F4467CE9-E00E-4D0A-9671-59E290E1A8DF}" WorkUnitID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ball_Shoot" ID="{D76BFA05-9D5B-468F-A1F9-32CC70A4DDD1}">
+							<ChildrenList>
+								<Action Name="" ID="{D56B5E77-AB1C-450D-8878-FBF8C6EBE19A}" ShortID="296715618">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ball Shoot Container" ID="{A1B109CB-7F81-426A-9876-98D6E9F5ADDB}" WorkUnitID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Defender_Hit" ID="{3A07F9F0-55E9-4DB8-A3F0-154D838FD4F3}">
+							<ChildrenList>
+								<Action Name="" ID="{CD998033-8E09-4306-98E9-342D0F8EB251}" ShortID="850884939">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Defender Hit Container" ID="{B6E8A931-FB03-4EB8-81C2-7ED07159D61B}" WorkUnitID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Place_Wall" ID="{0B8D4C69-1CCB-47A5-A64F-9F0D060DACDB}">
+							<ChildrenList>
+								<Action Name="" ID="{BF9C8518-C901-4248-A9D2-EF13D7A822D3}" ShortID="516595468">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Place Wall Container" ID="{7DAF7D52-FA6D-423B-A45E-68C56DD86A7F}" WorkUnitID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Buttons" ID="{7C1AE495-01EF-41CC-989C-D710A99627F1}">
+							<ChildrenList>
+								<Action Name="" ID="{23485F9B-38AE-4E72-828E-AB3A9822F037}" ShortID="884609795">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu Buttons Container" ID="{7F550E58-A375-465B-99B2-0892B21F3204}" WorkUnitID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

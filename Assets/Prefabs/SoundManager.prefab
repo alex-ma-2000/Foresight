@@ -70,8 +70,17 @@ MonoBehaviour:
   bgm:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 04a4f335d84371742b42d56fb2bcaeba,
+      type: 2}
   victoryJingle:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 83c9489ce5a23784f8c733d5a0299354,
+      type: 2}
+  playingState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e48706c3e9f832649879d1835c51852d,
+      type: 2}

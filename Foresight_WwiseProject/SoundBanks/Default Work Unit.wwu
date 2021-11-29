@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F3D6C411-4273-45BC-9C90-E0D5EC6342EC}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{F3D6C411-4273-45BC-9C90-E0D5EC6342EC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F3D6C411-4273-45BC-9C90-E0D5EC6342EC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Foresight" ID="{B5AE4B43-FE81-4AD2-BB04-F77AF08C9342}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Menu_Buttons" ID="{7C1AE495-01EF-41CC-989C-D710A99627F1}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ball_Shoot" ID="{D76BFA05-9D5B-468F-A1F9-32CC70A4DDD1}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Place_Wall" ID="{0B8D4C69-1CCB-47A5-A64F-9F0D060DACDB}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play" ID="{920C234C-88EE-48A0-8190-BB7C8CEA022D}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Game_Over" ID="{BE36B29D-A20E-4C15-9FBC-5806E1BBC98D}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Defender_Hit" ID="{3A07F9F0-55E9-4DB8-A3F0-154D838FD4F3}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Ball_Bounce" ID="{6D669655-9CFD-4DDA-8A46-F95F386756B3}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

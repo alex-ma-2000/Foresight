@@ -52,3 +52,10 @@ MonoBehaviour:
   attacker: {fileID: 0}
   wall: {fileID: 0}
   gameOver: 0
+  gameStarted: 0
+  placeWalls:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 99d85d23aa750f9408cb9503cbd87442,
+      type: 2}
+  gameState: 2

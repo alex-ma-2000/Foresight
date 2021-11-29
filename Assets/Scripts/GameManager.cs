@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
                 winScreen.gameObject.SetActive(true);
                 winScreen.text = "Attacker Wins! \nClick to Play Again!\nESC to Return to Title";
                 AkSoundEngine.SetState("Music_States", "Game_Completed");
+                AkSoundEngine.PostEvent("Game_Over", gameObject);
             }
             else if (defenderScore >= defenderWinScore)
             {
@@ -82,6 +83,7 @@ public class GameManager : MonoBehaviour
                 winScreen.gameObject.SetActive(true);
                 winScreen.text = "You Lose. \nClick to Play Again! \nESC to Return to Title"; // Change to defender wins in future interations
                 AkSoundEngine.SetState("Music_States", "Game_Completed");
+                AkSoundEngine.PostEvent("Game_Over", gameObject);
             }
         }
         // Post Game Logic
@@ -96,6 +98,7 @@ public class GameManager : MonoBehaviour
                 ResetRound();
                 UpdateAttackerResources(attacker.GetComponent<Attacker>().GetBounces());
                 gameOver = false;
+                AkSoundEngine.StopAll(gameObject);
             }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -176,7 +179,7 @@ public class GameManager : MonoBehaviour
         {
             walls[x].SetActive(true);
 
-            Debug.Log(x);
+            //Debug.Log(x);
         }
 
         placeWalls.Post(gameObject);
@@ -202,6 +205,7 @@ public class GameManager : MonoBehaviour
     private void AttackerStart()
     {
         gameState = GameState.Attacker;
+        gameStarted = true;
         playerSelect.SetActive(false);
         scoreboard.gameObject.SetActive(true);
         attackerResources.gameObject.SetActive(true);
@@ -212,6 +216,7 @@ public class GameManager : MonoBehaviour
     private void DefenderStart()
     {
         gameState = GameState.Defender;
+        gameStarted = true;
         playerSelect.SetActive(false);
         scoreboard.gameObject.SetActive(true);
         attackerResources.gameObject.SetActive(true);

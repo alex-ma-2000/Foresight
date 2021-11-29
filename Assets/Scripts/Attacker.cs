@@ -88,7 +88,8 @@ public class Attacker : MonoBehaviour
             ballBounce.Post(gameObject);
             curBounces--;
             bouncesOccured++;
-            AkSoundEngine.SetRTPCValue("Ball Bounce", bouncesOccured);
+            Debug.Log(bouncesOccured);
+            AkSoundEngine.SetRTPCValue("Bounces_Occured", bouncesOccured);
             gameManager.UpdateAttackerResources(curBounces);
         }
         else if (curBounces == 0)
@@ -96,8 +97,9 @@ public class Attacker : MonoBehaviour
             gameManager.DefenderWin();
             bounces = gameManager.AttackerBounces();
             curBounces = bounces; // Resets Bounces
-            bouncesOccured = 0;
+            ResetBouncesOccured();
             gameManager.UpdateAttackerResources(curBounces);
+            AkSoundEngine.PostEvent("Defender_Hit", gameObject);
         }
     }
 
@@ -115,5 +117,10 @@ public class Attacker : MonoBehaviour
     public int GetBounces()
     {
         return bounces;
+    }
+
+    public void ResetBouncesOccured()
+    {
+        bouncesOccured = 0;
     }
 }
