@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2526820802" Language="SFX" Hash="3309248481">
+		<SoundBank Id="2526820802" Language="SFX" Hash="1224587554">
 			<ObjectPath>\SoundBanks\Default Work Unit\Foresight</ObjectPath>
 			<ShortName>Foresight</ShortName>
 			<Path>Foresight.bnk</Path>
@@ -36,8 +36,18 @@
 							<Path>SFX\Ball Shoot_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="3215068044" Name="Game_in_Play" ObjectPath="\States\Music States\Music_States\Game_in_Play"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="3976231086" Name="Defender_Hit" ObjectPath="\Events\Default Work Unit\Main\Defender_Hit" DurationType="Infinite"/>
+				<Event Id="3976231086" Name="Defender_Hit" ObjectPath="\Events\Default Work Unit\Main\Defender_Hit" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="415750016" Language="SFX">
+							<ShortName>Defender Hit.wav</ShortName>
+							<Path>SFX\Defender Hit_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1432716332" Name="Game_Over" ObjectPath="\Events\Default Work Unit\Main\Game_Over" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="775116665" Language="SFX">
@@ -45,9 +55,6 @@
 							<Path>SFX\Endgame_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<ActionSetState>
-						<ActionSetStateEntry Id="3215068044" Name="Game_in_Play" ObjectPath="\States\Music States\Music_States\Game_in_Play"/>
-					</ActionSetState>
 				</Event>
 				<Event Id="3810358618" Name="Menu_Buttons" ObjectPath="\Events\Default Work Unit\Main\Menu_Buttons" DurationType="Infinite">
 					<IncludedMemoryFiles>

@@ -4,6 +4,13 @@
 		<WorkUnit Name="Sound Effects" ID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Ball Bounce Container" ID="{F4467CE9-E00E-4D0A-9671-59E290E1A8DF}" ShortID="831013750">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>
@@ -187,6 +194,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Ball Shoot Container" ID="{A1B109CB-7F81-426A-9876-98D6E9F5ADDB}" ShortID="182739169">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>
@@ -339,6 +353,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Menu Buttons Container" ID="{7F550E58-A375-465B-99B2-0892B21F3204}" ShortID="732056528">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>
@@ -491,6 +512,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Defender Hit Container" ID="{B6E8A931-FB03-4EB8-81C2-7ED07159D61B}" ShortID="577521353">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>
@@ -509,6 +537,89 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AF55C4BA-2A23-45E5-BA89-A154FE80FA2C}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Defender Hit" ID="{95B6FCE9-042D-4910-AF00-89879FDA36E6}" ShortID="59316316">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AF55C4BA-2A23-45E5-BA89-A154FE80FA2C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Defender Hit" ID="{C292C434-78C0-4B96-930C-375D541EE62F}" ShortID="840199645">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AF55C4BA-2A23-45E5-BA89-A154FE80FA2C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Defender Hit" ID="{13325113-0C81-4AD6-B69B-B7175B9B6516}">
+													<Language>SFX</Language>
+													<AudioFile>Defender Hit.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="415750016"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{59B6737A-F1E3-44FA-8A4C-F5507FA1E971}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{054D3219-C5FA-4045-A5EF-AFA1D1E33F26}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Defender Hit" ID="{EC4E45BE-5D5A-4113-B524-19AE5C72BFA8}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="2000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Defender Hit" ID="{13325113-0C81-4AD6-B69B-B7175B9B6516}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{B534837E-4E48-4CD0-AC22-FEA08970E745}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{4CAE73C9-8911-42E0-881A-10CADB65B173}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="2000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{004F93EC-B3C5-4C44-8FD5-822C50A2A945}">
 									<PropertyList>
@@ -524,7 +635,16 @@
 							</TransitionList>
 							<ObjectLists/>
 							<Playlist>
-								<MusicPlaylistItem Name="" ID="{E1A50CF8-CA3F-4779-8544-10AF2ED36EB9}" ShortID="26403988"/>
+								<MusicPlaylistItem Name="" ID="{E1A50CF8-CA3F-4779-8544-10AF2ED36EB9}" ShortID="26403988">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{C9686E17-52C8-4DDC-BFAE-8153354FCFAF}" ShortID="946359666">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<SegmentRef Name="Defender Hit" ID="{95B6FCE9-042D-4910-AF00-89879FDA36E6}"/>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
 					</ChildrenList>
@@ -551,6 +671,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Place Wall Container" ID="{7DAF7D52-FA6D-423B-A45E-68C56DD86A7F}" ShortID="963589258">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>

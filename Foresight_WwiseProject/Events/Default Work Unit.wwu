@@ -25,17 +25,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{BCB19F0E-140E-40F6-895B-8C8E727DE5B4}" ShortID="869973703">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-										<Property Name="Delay" Type="Real64" Value="16"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Game_in_Play" ID="{FE43B079-7B1C-4AE1-91F3-EC7603C79763}" WorkUnitID="{EFE834FE-8231-438F-9B1C-1753A2412EF5}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Ball_Bounce" ID="{6D669655-9CFD-4DDA-8A46-F95F386756B3}">
@@ -55,6 +44,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Ball Shoot Container" ID="{A1B109CB-7F81-426A-9876-98D6E9F5ADDB}" WorkUnitID="{5CFD2062-6B6B-4373-8056-4D5F76DA9C70}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6AB2147C-2B07-4201-B9C4-CFBD9B126807}" ShortID="323344861">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game_in_Play" ID="{FE43B079-7B1C-4AE1-91F3-EC7603C79763}" WorkUnitID="{EFE834FE-8231-438F-9B1C-1753A2412EF5}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

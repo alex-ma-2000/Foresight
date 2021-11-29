@@ -4,6 +4,13 @@
 		<WorkUnit Name="Music" ID="{52ADCD53-AD03-466E-AFFC-915417B4441E}" PersistMode="Standalone">
 			<ChildrenList>
 				<MusicSwitchContainer Name="Main Music Container" ID="{41B30787-A81D-41E5-83EE-6DC90D769A37}" ShortID="1061211816">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>
@@ -160,6 +167,13 @@
 					</EntryList>
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Victory Jingle Container" ID="{1D742EF9-6D67-4A81-BA40-85670B81EE3F}" ShortID="816939913">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B10C1395-A5A8-4854-A1E6-3BBD73FF9895}"/>

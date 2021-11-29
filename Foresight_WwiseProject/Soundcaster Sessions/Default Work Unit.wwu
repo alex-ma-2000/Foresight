@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D5C71B98-00EB-4091-AE4C-91DB0FE79958}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{D5C71B98-00EB-4091-AE4C-91DB0FE79958}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D5C71B98-00EB-4091-AE4C-91DB0FE79958}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{48B46EE9-3ADA-4AB4-B50F-4D1AF521FAF3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Ball_Bounce" ID="{6D669655-9CFD-4DDA-8A46-F95F386756B3}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Menu_Buttons" ID="{7C1AE495-01EF-41CC-989C-D710A99627F1}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Ball_Shoot" ID="{D76BFA05-9D5B-468F-A1F9-32CC70A4DDD1}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Place_Wall" ID="{0B8D4C69-1CCB-47A5-A64F-9F0D060DACDB}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Defender_Hit" ID="{3A07F9F0-55E9-4DB8-A3F0-154D838FD4F3}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play" ID="{920C234C-88EE-48A0-8190-BB7C8CEA022D}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Game_Over" ID="{BE36B29D-A20E-4C15-9FBC-5806E1BBC98D}" WorkUnitID="{15342767-C062-4CA0-B2A8-4A9B0303BD7F}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Bounces_Occurred" ID="{30B25344-CABB-48C0-B80C-ECAD238A4ACC}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Game_Completed" ID="{803D9476-45C8-43ED-8DB8-E7BEDA1A5027}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
