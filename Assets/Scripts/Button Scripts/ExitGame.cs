@@ -24,4 +24,9 @@ public class ExitGame : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void OnClick()
+    {
+        AkSoundEngine.PostEvent("Menu_Buttons", gameObject);
+    }
 }

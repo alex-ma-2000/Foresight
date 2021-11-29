@@ -25,4 +25,9 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void OnClick()
+    {
+        AkSoundEngine.PostEvent("Menu_Buttons", gameObject);
+    }
 }

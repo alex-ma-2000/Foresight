@@ -6,6 +6,8 @@ public class Defender : MonoBehaviour
 {
     private GameManager gameManager;
 
+    public AK.Wwise.Event defenderHit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +24,6 @@ public class Defender : MonoBehaviour
     {
         // Tick Game Score
         gameManager.AttackerWin();
+        defenderHit.Post(gameObject);
     }
 }

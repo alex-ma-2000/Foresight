@@ -15,7 +15,10 @@ public class Attacker : MonoBehaviour
     public bool fired = false;
     public int bounces = 3; // May increase in the future
     private int curBounces;
+    private int bouncesOccured;
 
+    public AK.Wwise.Event ballBounce;
+    public AK.Wwise.Event fireBall;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +59,8 @@ public class Attacker : MonoBehaviour
                 // Shooting Logic
                 //Debug.Log("FIRED");
                 gameManager.BuildWalls();
-                
+                fireBall.Post(gameObject);
+
                 _lineRenderer.enabled = false;
                 Vector3 cursorInWorldPos = GetCurrentMouseDirection();
                 cursorInWorldPos.Normalize();
@@ -74,12 +78,17 @@ public class Attacker : MonoBehaviour
         }
     }
 
+    // Event Trigger for Bounces
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Wall" && curBounces != 0)
         {
             rb.velocity = Vector3.Reflect(rb.velocity, collision.contacts[0].normal);
+            // Ball Bounce Sound
+            ballBounce.Post(gameObject);
             curBounces--;
+            bouncesOccured++;
+            AkSoundEngine.SetRTPCValue("Ball Bounce", bouncesOccured);
             gameManager.UpdateAttackerResources(curBounces);
         }
         else if (curBounces == 0)
@@ -87,6 +96,7 @@ public class Attacker : MonoBehaviour
             gameManager.DefenderWin();
             bounces = gameManager.AttackerBounces();
             curBounces = bounces; // Resets Bounces
+            bouncesOccured = 0;
             gameManager.UpdateAttackerResources(curBounces);
         }
     }

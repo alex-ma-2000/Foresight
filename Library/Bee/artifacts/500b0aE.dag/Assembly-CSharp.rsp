@@ -359,6 +359,7 @@
 "Assets/Scripts/Defender.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/KillBox.cs"
+"Assets/Scripts/SoundManager.cs"
 "Assets/Scripts/Wall.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"

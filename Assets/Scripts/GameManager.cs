@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     private Text winScreen;
     private GameObject playerSelect;
 
+    public AK.Wwise.Event placeWalls;
+
     public enum GameState { Attacker, Defender, NotStarted };
     public GameState gameState = GameState.NotStarted;
 
@@ -67,17 +69,19 @@ public class GameManager : MonoBehaviour
         if (!gameOver && gameStarted)
         {
             // Logic for ending the game
-            if (attackerScore == attackerWinScore)
+            if (attackerScore >= attackerWinScore)
             {
                 gameOver = true;
                 winScreen.gameObject.SetActive(true);
                 winScreen.text = "Attacker Wins! \nClick to Play Again!\nESC to Return to Title";
+                AkSoundEngine.SetState("Music_States", "Game_Completed");
             }
-            else if (defenderScore == defenderWinScore)
+            else if (defenderScore >= defenderWinScore)
             {
                 gameOver = true;
                 winScreen.gameObject.SetActive(true);
                 winScreen.text = "You Lose. \nClick to Play Again! \nESC to Return to Title"; // Change to defender wins in future interations
+                AkSoundEngine.SetState("Music_States", "Game_Completed");
             }
         }
         // Post Game Logic
@@ -174,6 +178,8 @@ public class GameManager : MonoBehaviour
 
             Debug.Log(x);
         }
+
+        placeWalls.Post(gameObject);
     }
 
     public int AttackerBounces()
@@ -199,6 +205,7 @@ public class GameManager : MonoBehaviour
         playerSelect.SetActive(false);
         scoreboard.gameObject.SetActive(true);
         attackerResources.gameObject.SetActive(true);
+        AkSoundEngine.PostEvent("Menu_Buttons", gameObject);
     }
 
     // Starts the game with the player as a defender
@@ -208,5 +215,6 @@ public class GameManager : MonoBehaviour
         playerSelect.SetActive(false);
         scoreboard.gameObject.SetActive(true);
         attackerResources.gameObject.SetActive(true);
+        AkSoundEngine.PostEvent("Menu_Buttons", gameObject);
     }
 }
