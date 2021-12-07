@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 4551461588980597412}
   - component: {fileID: 8821843938697426285}
   - component: {fileID: 1903565188143902904}
-  - component: {fileID: 795171203017228009}
+  - component: {fileID: -8568184978633094876}
+  - component: {fileID: -1091101113085473001}
   m_Layer: 0
   m_Name: DefenderWall
   m_TagString: Wall
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 1
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,7 +113,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
---- !u!114 &795171203017228009
+--- !u!114 &-8568184978633094876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201185413588687528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+--- !u!114 &-1091101113085473001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,3 +139,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d362bcea5315beb45b5f807d15a2906b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defender: {fileID: 4316737611835002872, guid: c3d0bb34170f0f849a55b111d4bad821,
+    type: 3}

@@ -10,12 +10,15 @@ public class Attacker : MonoBehaviour
     private LineRenderer _lineRenderer;
     private Rigidbody2D rb;
     private GameManager gameManager;
+    private Transform[] shootPos;
 
     public Camera camera;
     public bool fired = false;
+    public bool lockedIn = false;
     public int bounces = 3; // May increase in the future
     private int curBounces;
     private int bouncesOccured;
+    private Vector3 lockedFirePos;
 
     public AK.Wwise.Event ballBounce;
     public AK.Wwise.Event fireBall;
@@ -31,6 +34,16 @@ public class Attacker : MonoBehaviour
         _lineRenderer.enabled = true;
         rb = gameObject.GetComponent<Rigidbody2D>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (gameManager.gameMode == GameManager.GameMode.Singleplayer)
+        {
+            AttackerPos[] atkPos = GameObject.Find("ShootPositions").GetComponentsInChildren<AttackerPos>();
+
+            shootPos = new Transform[atkPos.Length];
+            for (int i = 0; i < atkPos.Length; i++)
+            {
+                shootPos[i] = atkPos[i].gameObject.GetComponent<Transform>();
+            }
+        }
 
         curBounces = bounces;
     }
@@ -39,7 +52,7 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         // Attacker Start Logic
-        if (!fired && !gameManager.gameOver && gameManager.gameState == GameManager.GameState.Attacker)
+        if (!fired && !gameManager.gameOver && gameManager.gameState == GameManager.GameState.Attacker && !lockedIn)
         {
             // Draws a line
             _lineRenderer.SetPosition(0, this.transform.position);
@@ -54,7 +67,7 @@ public class Attacker : MonoBehaviour
             _lineRenderer.enabled = true;
 
             // Fires the ball
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && gameManager.gameMode == GameManager.GameMode.Singleplayer)
             {
                 // Shooting Logic
                 //Debug.Log("FIRED");
@@ -69,12 +82,24 @@ public class Attacker : MonoBehaviour
 
                 fired = true;
             }
+            else if (Input.GetMouseButtonDown(0) && gameManager.gameMode == GameManager.GameMode.Multiplayer)
+            {
+                _lineRenderer.enabled = false;
+                Vector3 cursorInWorldPos = GetCurrentMouseDirection();
+                cursorInWorldPos.Normalize();
+                lockedFirePos = cursorInWorldPos;
+                lockedIn = true;
+            }
         } 
         // Defender Start Logic
-        else if (gameManager.gameState == GameManager.GameState.Defender)
+        else if (gameManager.gameState == GameManager.GameState.Defender && gameManager.playingRound && !fired)
         {
-            // TODO
             // Attacker AI
+            int rand = Random.Range(1, shootPos.Length);
+            Vector3 shootDir = shootPos[rand].position - this.transform.position;
+            shootDir.Normalize();
+            rb.velocity = new Vector2(shootDir.x * speed, shootDir.y * speed);
+            fired = true;
         }
     }
 
@@ -122,5 +147,11 @@ public class Attacker : MonoBehaviour
     public void ResetBouncesOccured()
     {
         bouncesOccured = 0;
+    }
+
+    public void FireBall()
+    {
+        rb.velocity = new Vector2(lockedFirePos.x * speed, lockedFirePos.y * speed);
+        fired = true;
     }
 }

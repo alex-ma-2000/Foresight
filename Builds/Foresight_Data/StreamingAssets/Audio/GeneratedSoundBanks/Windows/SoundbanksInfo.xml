@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Alex\Documents\Unity Projects\Foresight v0.3\Foresight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Alex\Documents\Unity Projects\Foresight v0.3\Foresight_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Alex\Documents\Unity Projects\Foresight v0.3\Foresight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\chuch\Documents\Unity Projects\Foresight\Foresight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Alex\Documents\Unity Projects\Foresight v0.3\Foresight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2526820802" Language="SFX" Hash="1224587554">
+		<SoundBank Id="2526820802" Language="SFX" Hash="3934085742">
 			<ObjectPath>\SoundBanks\Default Work Unit\Foresight</ObjectPath>
 			<ShortName>Foresight</ShortName>
 			<Path>Foresight.bnk</Path>

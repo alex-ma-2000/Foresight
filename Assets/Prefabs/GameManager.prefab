@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4969706134585205759}
   - component: {fileID: 8196602473308554382}
+  - component: {fileID: 969255972}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -50,12 +51,38 @@ MonoBehaviour:
   defenderWinScore: 5
   attackerSpawn: {fileID: 0}
   attacker: {fileID: 0}
+  defender: {fileID: 0}
   wall: {fileID: 0}
   gameOver: 0
   gameStarted: 0
+  scoreboard: {fileID: 0}
+  attackerResources: {fileID: 0}
+  defenderResources: {fileID: 0}
   placeWalls:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 99d85d23aa750f9408cb9503cbd87442,
       type: 2}
   gameState: 2
+--- !u!114 &969255972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5844743052207969450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436e1d881776fd547b1df67a9efbb399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1

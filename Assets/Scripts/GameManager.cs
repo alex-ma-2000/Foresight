@@ -12,23 +12,31 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private int attackerWinScore = 5;
     [SerializeField]
-    private int defenderScore = 0; // Technically this is attacker lives in this build
+    private int defenderScore = 0;
     [SerializeField]
     private int defenderWinScore = 5;
 
     public GameObject attackerSpawn;
     public GameObject attacker;
+    public GameObject defender;
 
     public GameObject wall;
     private GameObject[] walls;
 
     public bool gameOver = false;
+    public bool playingRound = false;
     [SerializeField]
     private bool gameStarted = false;
 
-    private Text scoreboard;
-    private Text attackerResources;
+    [HideInInspector]
+    public Text scoreboard;
+    [HideInInspector]
+    public Text attackerResources;
+    [HideInInspector]
+    public Text defenderResources;
     private Text winScreen;
+    [SerializeField]
+    private Button nextTurn;
     private GameObject playerSelect;
 
     public AK.Wwise.Event placeWalls;
@@ -36,20 +44,30 @@ public class GameManager : MonoBehaviour
     public enum GameState { Attacker, Defender, NotStarted };
     public GameState gameState = GameState.NotStarted;
 
+    public enum GameMode { Singleplayer, Multiplayer };
+    public GameMode gameMode;
+
     // Start is called before the first frame update
     void Start()
     {
         scoreboard = GameObject.Find("Scoreboard").GetComponent<Text>();
-        scoreboard.gameObject.SetActive(false);
         attackerResources = GameObject.Find("Attacker").GetComponent<Text>();
-        attackerResources.gameObject.SetActive(false);
+        defenderResources = GameObject.Find("DefenderResources").GetComponent<Text>();
         winScreen = GameObject.Find("WinScreen").GetComponent<Text>();
         winScreen.gameObject.SetActive(false);
+        if (gameMode == GameMode.Singleplayer)
+        {
+            playerSelect = GameObject.Find("Player Select");
+        }
+        if (gameMode == GameMode.Multiplayer)
+        {
+            gameStarted = true;
+        }
 
-        // Add Listeners to buttons
-        AddListernersToButtons();
+        nextTurn = GameObject.Find("Next Turn").GetComponent<Button>();
+        nextTurn.onClick.AddListener(NextTurn);
 
-        Transform[] objs = wall.GetComponentsInChildren<Transform>();
+        Wall[] objs = wall.GetComponentsInChildren<Wall>();
         walls = new GameObject[objs.Length];
 
         for (int i = 0; i < objs.Length; i++)
@@ -59,7 +77,7 @@ public class GameManager : MonoBehaviour
 
         // First Round Logic - Need to place down 2 wall in the defender area
         //BuildWalls();
-        wall.SetActive(false);
+        //wall.SetActive(false);
     }
 
     // Update is called once per frame
@@ -81,29 +99,74 @@ public class GameManager : MonoBehaviour
             {
                 gameOver = true;
                 winScreen.gameObject.SetActive(true);
-                winScreen.text = "You Lose. \nClick to Play Again! \nESC to Return to Title"; // Change to defender wins in future interations
+                winScreen.text = "Defender Wins! \nClick to Play Again! \nESC to Return to Title";
                 AkSoundEngine.SetState("Music_States", "Game_Completed");
                 AkSoundEngine.PostEvent("Game_Over", gameObject);
+            }
+
+            // Logic for determining turns
+            if (gameMode == GameMode.Multiplayer)
+            {
+                if ((gameState == GameState.Attacker && attacker.GetComponent<Attacker>().lockedIn) ||
+                    (gameState == GameState.Defender && defender.GetComponent<Defender>().GetWalls() == 0))
+                {
+                    nextTurn.interactable = true;
+                }
+                else
+                {
+                    nextTurn.interactable = false;
+                }
+            } 
+            else if (gameMode == GameMode.Singleplayer && gameState == GameState.Defender && defender.GetComponent<Defender>().GetWalls() == 0)
+            {
+                nextTurn.interactable = true;
+            }
+            else
+            {
+                nextTurn.interactable = false;
             }
         }
         // Post Game Logic
         else if (gameOver)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && gameMode == GameMode.Singleplayer)
             {
                 attackerScore = 0;
                 defenderScore = 0;
                 UpdateScoreboard();
                 winScreen.gameObject.SetActive(false);
                 ResetRound();
-                UpdateAttackerResources(attacker.GetComponent<Attacker>().GetBounces());
                 gameOver = false;
+                gameState = GameState.NotStarted;
+                gameStarted = false;
+                playerSelect.SetActive(true);
+                UpdateAttackerResources(3);
+                UpdateDefenderResources(2);
                 AkSoundEngine.StopAll(gameObject);
+                AkSoundEngine.PostEvent("Play", gameObject);
+            } 
+            else if (Input.GetMouseButtonDown(0) && gameMode == GameMode.Multiplayer) 
+            {
+                attackerScore = 0;
+                defenderScore = 0;
+                UpdateScoreboard();
+                winScreen.gameObject.SetActive(false);
+                ResetRound();
+                gameOver = false;
+                gameState = GameState.Attacker;
+                UpdateAttackerResources(3);
+                UpdateDefenderResources(2);
+                attacker.GetComponent<Attacker>().fired = false;
+                attacker.GetComponent<Attacker>().lockedIn = false;
+                defender.GetComponent<Defender>().DeselectAllWalls();
+                AkSoundEngine.StopAll(gameObject);
+                AkSoundEngine.PostEvent("Play", gameObject);
             }
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 // Change to return to main menu
                 SceneManager.LoadScene("Title Screen");
+                AkSoundEngine.StopAll(gameObject);
             }
         }
     }
@@ -115,6 +178,16 @@ public class GameManager : MonoBehaviour
         attacker.transform.position = attackerSpawn.transform.position;
         attacker.GetComponent<Rigidbody2D>().velocity = new Vector3(0f, 0f, 0f);
         attacker.GetComponent<Attacker>().fired = false;
+        attacker.GetComponent<Attacker>().lockedIn = false;
+        defender.GetComponent<Defender>().DeselectAllWalls();
+
+        playingRound = false;
+        foreach (GameObject wall in walls)
+        {
+            wall.SetActive(true);
+            wall.GetComponent<Wall>().Deselect();
+        }
+        defender.GetComponent<Defender>().SetWallResources(DefenderWalls());
 
         // New Round Logic
         //BuildWalls();
@@ -130,11 +203,17 @@ public class GameManager : MonoBehaviour
         attackerResources.text = "Bounces: " + bounces;
     }
 
+    public void UpdateDefenderResources(int walls)
+    {
+        defenderResources.text = "Walls: " + walls;
+    }
+
     public void AttackerWin()
     {
         attackerScore++;
         UpdateScoreboard();
-        UpdateAttackerResources(attacker.GetComponent<Attacker>().GetBounces());
+        UpdateAttackerResources(AttackerBounces());
+        UpdateDefenderResources(DefenderWalls());
         ResetRound();
     }
 
@@ -142,7 +221,8 @@ public class GameManager : MonoBehaviour
     {
         defenderScore++;
         UpdateScoreboard();
-        UpdateAttackerResources(attacker.GetComponent<Attacker>().GetBounces());
+        UpdateAttackerResources(AttackerBounces());
+        UpdateDefenderResources(DefenderWalls());
         ResetRound();
     }
 
@@ -190,36 +270,33 @@ public class GameManager : MonoBehaviour
         return 3 + defenderScore;
     }
 
-    // Adds Listeners to buttons for this scene
-    private void AddListernersToButtons()
+    public int DefenderWalls()
     {
-        playerSelect = GameObject.Find("Player Select");
-        Button attackerBtn = playerSelect.GetComponentsInChildren<Button>()[0];
-        Button defenderBtn = playerSelect.GetComponentsInChildren<Button>()[1];
-
-        attackerBtn.onClick.AddListener(AttackerStart);
-        defenderBtn.onClick.AddListener(DefenderStart);
+        return 2 + attackerScore;
     }
 
-    // Starts the game with the player as an attacker
-    private void AttackerStart()
+    public void setGameStarted(bool started)
     {
-        gameState = GameState.Attacker;
-        gameStarted = true;
-        playerSelect.SetActive(false);
-        scoreboard.gameObject.SetActive(true);
-        attackerResources.gameObject.SetActive(true);
-        AkSoundEngine.PostEvent("Menu_Buttons", gameObject);
+        gameStarted = started;
     }
 
-    // Starts the game with the player as a defender
-    private void DefenderStart()
+    private void NextTurn()
     {
-        gameState = GameState.Defender;
-        gameStarted = true;
-        playerSelect.SetActive(false);
-        scoreboard.gameObject.SetActive(true);
-        attackerResources.gameObject.SetActive(true);
-        AkSoundEngine.PostEvent("Menu_Buttons", gameObject);
+        if (gameMode == GameMode.Singleplayer && gameState == GameState.Defender)
+        {
+            playingRound = true;
+            defender.GetComponent<Defender>().HideUnselectedWalls();
+        }
+        else if (gameMode == GameMode.Multiplayer && gameState == GameState.Attacker && attacker.GetComponent<Attacker>().lockedIn)
+        {
+            gameState = GameState.Defender;
+        }
+        else if (gameMode == GameMode.Multiplayer && gameState == GameState.Defender)
+        {
+            gameState = GameState.Attacker;
+            playingRound = true;
+            defender.GetComponent<Defender>().HideUnselectedWalls();
+            attacker.GetComponent<Attacker>().FireBall();
+        }
     }
 }
